@@ -33,7 +33,7 @@ export default function TrainingIrrigationLine({ data }) {
   }
 
   return (
-    <div className="wrd-chart-panel" style={{ flex: '1 1 0' }}>
+    <div className="wrd-chart-panel" style={{ flex: '1 1 0', display: 'flex', flexDirection: 'column' }}>
       <div className="wrd-chart-panel__header">
         <div className="wrd-chart-panel__title">
           Number of Training For Adopting Irrigation Schedule
@@ -44,11 +44,11 @@ export default function TrainingIrrigationLine({ data }) {
         </div>
       </div>
 
-      <div className="wrd-chart-panel__body" style={{ cursor: 'pointer' }}>
+      <div className="wrd-chart-panel__body" style={{ flex: 1, minHeight: 0, cursor: 'pointer' }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}
-            margin={{ top: 18, right: 20, bottom: 2, left: 20 }}
+            margin={{ top: 16, right: 24, bottom: 2, left: 24 }}
             onClick={handleChartClick}
           >
             <defs>
@@ -89,6 +89,7 @@ export default function TrainingIrrigationLine({ data }) {
               fillOpacity={1}
               fill="url(#trainingTargetGrad)"
               dot={(props) => {
+                if (props.value == null || props.payload?.target == null) return null
                 const isSelected = selectedFY && props.payload?.fy === selectedFY
                 return (
                   <circle
@@ -125,6 +126,8 @@ export default function TrainingIrrigationLine({ data }) {
               fillOpacity={1}
               fill="url(#trainingActualGrad)"
               dot={(props) => {
+                // Do NOT render dot if actual value is null/missing
+                if (props.value == null || props.payload?.actual == null) return null
                 const isSelected = selectedFY && props.payload?.fy === selectedFY
                 return (
                   <circle

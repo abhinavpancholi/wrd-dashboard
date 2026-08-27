@@ -456,14 +456,37 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+  padding-bottom: 2px;
 }
 
 .wrd-map-svg {
   width: 100%;
-  height: 100%;
+  flex: 1;
+  min-height: 0;
   display: block;
+}
+
+.wrd-map-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2px;
+  font-size: 0.64rem;
+  color: #475569;
+  font-weight: 700;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.wrd-map-legend__bar {
+  flex: 0 1 120px;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #e0f2fe 0%, #7dd3fc 30%, #2563eb 70%, #1e3a8a 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* Tooltips */
