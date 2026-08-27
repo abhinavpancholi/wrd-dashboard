@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Lightbulb, FileText, BarChart3 } from 'lucide-react'
+import { Target, ListChecks, BarChart3 } from 'lucide-react'
 import useWrdStore from '../../context/WrdStore'
 
 const FY_OPTIONS = [
@@ -18,26 +18,38 @@ function StatCards() {
   const kpis = config?.kpis || 14
 
   return (
-    <div className="wrd-sidebar__top">
+    <div className="wrd-stat-cards">
       {/* 1. Interventions */}
       <div className="wrd-stat-card wrd-stat-card--teal">
-        <Lightbulb size={18} className="wrd-stat-card__icon" />
-        <div className="wrd-stat-card__label">Interventions</div>
-        <div className="wrd-stat-card__value">{interventions}</div>
+        <div className="wrd-stat-card__icon wrd-stat-card__icon--teal">
+          <Target size={20} />
+        </div>
+        <div className="wrd-stat-card__content">
+          <div className="wrd-stat-card__label">INTERVENTIONS</div>
+          <div className="wrd-stat-card__value">{interventions}</div>
+        </div>
       </div>
 
       {/* 2. Actionable Steps */}
       <div className="wrd-stat-card wrd-stat-card--blue">
-        <FileText size={18} className="wrd-stat-card__icon" />
-        <div className="wrd-stat-card__label">Actionable Steps</div>
-        <div className="wrd-stat-card__value">{actionableSteps}</div>
+        <div className="wrd-stat-card__icon wrd-stat-card__icon--blue">
+          <ListChecks size={20} />
+        </div>
+        <div className="wrd-stat-card__content">
+          <div className="wrd-stat-card__label">ACTIONABLE STEPS</div>
+          <div className="wrd-stat-card__value">{actionableSteps}</div>
+        </div>
       </div>
 
       {/* 3. KPIs */}
-      <div className="wrd-stat-card wrd-stat-card--green">
-        <BarChart3 size={18} className="wrd-stat-card__icon" />
-        <div className="wrd-stat-card__label">KPIs</div>
-        <div className="wrd-stat-card__value">{kpis}</div>
+      <div className="wrd-stat-card wrd-stat-card--purple">
+        <div className="wrd-stat-card__icon wrd-stat-card__icon--purple">
+          <BarChart3 size={20} />
+        </div>
+        <div className="wrd-stat-card__content">
+          <div className="wrd-stat-card__label">KPIS</div>
+          <div className="wrd-stat-card__value">{kpis}</div>
+        </div>
       </div>
     </div>
   )

@@ -8,12 +8,8 @@ export default function ActionMilestoneCard({ title, targetFY }) {
         {title}
       </div>
       <div className="wrd-action-card__footer">
-        <div className="wrd-action-card__badge">
-          <AlertCircle size={14} color="#d97706" fill="#fef3c7" />
-        </div>
-        <div className="wrd-action-card__year">
-          {targetFY}
-        </div>
+        <AlertCircle size={14} color="#d97706" fill="#fef3c7" />
+        <span className="wrd-action-card__year">{targetFY}</span>
       </div>
     </div>
   )
