@@ -1,0 +1,273 @@
+{
+  "training": [
+    {
+      "fy": "2022-23",
+      "target": 302,
+      "actual": 195
+    },
+    {
+      "fy": "2023-24",
+      "target": 575,
+      "actual": 350
+    },
+    {
+      "fy": "2024-25",
+      "target": 875,
+      "actual": 626
+    },
+    {
+      "fy": "2025-26",
+      "target": 975,
+      "actual": 839
+    },
+    {
+      "fy": "2026-27",
+      "target": 1175,
+      "actual": null
+    },
+    {
+      "fy": "2027-28",
+      "target": 1375,
+      "actual": null
+    },
+    {
+      "fy": "2028-29",
+      "target": 1625,
+      "actual": null
+    },
+    {
+      "fy": "2029-30",
+      "target": 1875,
+      "actual": null
+    }
+  ],
+  "reservoirs": [
+    {
+      "fy": "2022-23",
+      "target": 104,
+      "actual": 104
+    },
+    {
+      "fy": "2023-24",
+      "target": 137,
+      "actual": 137
+    },
+    {
+      "fy": "2024-25",
+      "target": 226,
+      "actual": 226
+    },
+    {
+      "fy": "2025-26",
+      "target": 238,
+      "actual": 238
+    },
+    {
+      "fy": "2026-27",
+      "target": 338,
+      "actual": null
+    },
+    {
+      "fy": "2027-28",
+      "target": 429,
+      "actual": null
+    },
+    {
+      "fy": "2028-29",
+      "target": 459,
+      "actual": null
+    },
+    {
+      "fy": "2029-30",
+      "target": 484,
+      "actual": null
+    }
+  ],
+  "farmers": [
+    {
+      "fy": "2022-23",
+      "target": 54516,
+      "actual": 54516
+    },
+    {
+      "fy": "2023-24",
+      "target": 153888,
+      "actual": 173426
+    },
+    {
+      "fy": "2024-25",
+      "target": 273352,
+      "actual": 265176
+    },
+    {
+      "fy": "2025-26",
+      "target": 347020,
+      "actual": 328364
+    },
+    {
+      "fy": "2026-27",
+      "target": 417000,
+      "actual": null
+    },
+    {
+      "fy": "2027-28",
+      "target": 417000,
+      "actual": null
+    },
+    {
+      "fy": "2028-29",
+      "target": 417000,
+      "actual": null
+    },
+    {
+      "fy": "2029-30",
+      "target": 417000,
+      "actual": null
+    }
+  ],
+  "commandArea": [
+    {
+      "fy": "2022-23",
+      "target": 87225.84,
+      "actual": 105390.62
+    },
+    {
+      "fy": "2023-24",
+      "target": 246213.92,
+      "actual": 234743.44
+    },
+    {
+      "fy": "2024-25",
+      "target": 437365.76,
+      "actual": 354637.13
+    },
+    {
+      "fy": "2025-26",
+      "target": 555230.76,
+      "actual": 438997.73
+    },
+    {
+      "fy": "2026-27",
+      "target": 667196.84,
+      "actual": null
+    },
+    {
+      "fy": "2027-28",
+      "target": 667196.84,
+      "actual": null
+    },
+    {
+      "fy": "2028-29",
+      "target": 667196.84,
+      "actual": null
+    },
+    {
+      "fy": "2029-30",
+      "target": 667196.84,
+      "actual": null
+    }
+  ],
+  "recharge": [
+    {
+      "fy": "2022-23",
+      "value": 1272,
+      "isTarget": false,
+      "target": null,
+      "actual": 1272
+    },
+    {
+      "fy": "2023-24",
+      "value": 282,
+      "isTarget": false,
+      "target": null,
+      "actual": 282
+    },
+    {
+      "fy": "2024-25",
+      "value": 12,
+      "isTarget": false,
+      "target": null,
+      "actual": 12
+    },
+    {
+      "fy": "2025-26",
+      "value": 15,
+      "isTarget": false,
+      "target": null,
+      "actual": 15
+    },
+    {
+      "fy": "2026-27",
+      "value": 110,
+      "isTarget": true,
+      "target": 110,
+      "actual": null
+    },
+    {
+      "fy": "2027-28",
+      "value": 130,
+      "isTarget": true,
+      "target": 130,
+      "actual": null
+    },
+    {
+      "fy": "2028-29",
+      "value": 220,
+      "isTarget": true,
+      "target": 220,
+      "actual": null
+    },
+    {
+      "fy": "2029-30",
+      "value": 340,
+      "isTarget": true,
+      "target": 340,
+      "actual": null
+    }
+  ],
+  "checkdams": [
+    {
+      "fy": "2020-21",
+      "value": 207,
+      "type": "actual"
+    },
+    {
+      "fy": "2021-22",
+      "value": 209,
+      "type": "actual"
+    },
+    {
+      "fy": "2022-23",
+      "value": 263,
+      "type": "actual"
+    },
+    {
+      "fy": "2023-24",
+      "value": 301,
+      "type": "actual"
+    },
+    {
+      "fy": "2024-25",
+      "value": 376,
+      "type": "actual"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "surface_groundwater_platform",
+      "code": "AIRD-84",
+      "title": "Development of data platform to capture data on Surface and Ground Water levels",
+      "targetFY": "2027-28",
+      "icon": "alert",
+      "status": "planned"
+    },
+    {
+      "id": "water_usage_platform",
+      "code": "AIRD-83",
+      "title": "Launch Common platform to share best practices of water usage",
+      "targetFY": "2026-27",
+      "icon": "alert",
+      "status": "planned"
+    }
+  ]
+}

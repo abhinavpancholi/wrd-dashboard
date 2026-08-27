@@ -1,0 +1,533 @@
+/* ============================================================
+   WRD Dashboard — Design System (Executive Light Theme & 100vh Layout)
+   Water Resource Department — Gujarat GRIT
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Dark Executive Sidebar */
+  --wrd-sidebar-bg: #0b192e;
+  --wrd-sidebar-bg-gradient: linear-gradient(180deg, #0f2342 0%, #0b182e 60%, #081120 100%);
+  --wrd-sidebar-border: rgba(255, 255, 255, 0.08);
+  --wrd-sidebar-text: #94a3b8;
+  --wrd-sidebar-text-hover: #e2e8f0;
+  --wrd-sidebar-text-active: #ffffff;
+
+  /* Canvas & Card */
+  --wrd-bg-page: #f1f5f9;
+  --wrd-bg-header: #ffffff;
+  --wrd-bg-card: #ffffff;
+  --wrd-bg-card-hover: #f8fafc;
+  --wrd-border: #e2e8f0;
+  --wrd-border-subtle: #f1f5f9;
+
+  /* Target & Actual Accents */
+  --wrd-target-color: #6366f1;
+  --wrd-target-light: #818cf8;
+  --wrd-actual-color: #f97316;
+  --wrd-actual-light: #fb923c;
+  --wrd-checkdam-color: #38bdf8;
+  --wrd-checkdam-light: #7dd3fc;
+
+  /* Teal & Cyan Accents */
+  --wrd-teal-600: #0f766e;
+  --wrd-teal-500: #0d9488;
+  --wrd-teal-400: #14b8a6;
+  --wrd-teal-100: #ccfbf1;
+  --wrd-teal-bg: rgba(20, 184, 166, 0.1);
+
+  /* Typography */
+  --wrd-text-primary: #0f172a;
+  --wrd-text-secondary: #475569;
+  --wrd-text-muted: #64748b;
+
+  --wrd-font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --wrd-font-body: 'Inter', system-ui, sans-serif;
+
+  /* Dimensions */
+  --wrd-sidebar-width: 220px;
+  --wrd-header-height: 52px;
+
+  /* Radii & Shadows */
+  --wrd-radius-sm: 6px;
+  --wrd-radius-md: 8px;
+  --wrd-radius-lg: 12px;
+  --wrd-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --wrd-shadow-hover: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--wrd-font-body);
+  background: var(--wrd-bg-page);
+  color: var(--wrd-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* App Layout */
+.wrd-app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.wrd-sidebar {
+  width: var(--wrd-sidebar-width);
+  min-width: var(--wrd-sidebar-width);
+  height: 100vh;
+  background: var(--wrd-sidebar-bg-gradient);
+  border-right: 1px solid var(--wrd-sidebar-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.wrd-sidebar__top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Sidebar Stat Cards */
+.wrd-stat-card {
+  border-radius: var(--wrd-radius-md);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  cursor: default;
+}
+
+.wrd-stat-card:hover {
+  transform: translateY(-1px);
+}
+
+.wrd-stat-card--teal {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.45), rgba(13, 148, 136, 0.35));
+  border: 1px solid rgba(45, 212, 191, 0.5);
+  color: #042f2c;
+}
+
+.wrd-stat-card--blue {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.45), rgba(37, 99, 235, 0.35));
+  border: 1px solid rgba(96, 165, 250, 0.5);
+  color: #0f172a;
+}
+
+.wrd-stat-card--green {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.5), rgba(15, 118, 110, 0.4));
+  border: 1px solid rgba(20, 184, 166, 0.6);
+  color: #042f2c;
+}
+
+.wrd-stat-card__icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  opacity: 0.85;
+}
+
+.wrd-stat-card__label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+
+.wrd-stat-card__value {
+  font-family: var(--wrd-font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #091a2f;
+  line-height: 1.1;
+}
+
+/* Sidebar Nav */
+.wrd-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.wrd-nav-item {
+  padding: 8px 12px;
+  border-radius: var(--wrd-radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.15s ease;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.wrd-nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.wrd-nav-item--active {
+  background: #1e3a8a !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-color: #3b82f6;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Sidebar FY Grid */
+.wrd-fy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wrd-fy-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.wrd-fy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.wrd-fy-btn {
+  background: rgba(30, 58, 138, 0.5);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: #e2e8f0;
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 6px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.wrd-fy-btn:hover {
+  background: rgba(37, 99, 235, 0.7);
+  color: #ffffff;
+  border-color: #60a5fa;
+}
+
+.wrd-fy-btn--active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-color: #93c5fd;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+/* Main Content Area */
+.wrd-main-layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Header */
+.wrd-header {
+  height: var(--wrd-header-height);
+  min-height: var(--wrd-header-height);
+  background: var(--wrd-bg-header);
+  border-bottom: 1px solid var(--wrd-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 10;
+}
+
+.wrd-header__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrd-header__map-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.wrd-header__grit-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.wrd-header__title-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrd-header__title {
+  font-family: var(--wrd-font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.wrd-header__subtitle {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #334155;
+  line-height: 1.2;
+}
+
+.wrd-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.wrd-header__cm-photo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Main Dashboard Workspace (100vh No-Scroll Grid) */
+.wrd-content-workspace {
+  flex: 1;
+  padding: 8px 10px;
+  display: grid;
+  grid-template-columns: 29% 42% 29%;
+  gap: 8px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Columns */
+.wrd-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  height: 100%;
+}
+
+/* Chart Panel Base Card */
+.wrd-chart-panel {
+  background: var(--wrd-bg-card);
+  border: 1px solid var(--wrd-border);
+  border-radius: var(--wrd-radius-md);
+  padding: 6px 8px 4px 8px;
+  box-shadow: var(--wrd-shadow-card);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrd-chart-panel__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.wrd-chart-panel__title {
+  font-family: var(--wrd-font-display);
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.wrd-chart-panel__legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.64rem;
+  color: #475569;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.wrd-legend-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.wrd-legend-dot--target { background: #7073c1; }
+.wrd-legend-dot--actual { background: #f29879; }
+
+.wrd-chart-panel__body {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+/* Action Milestone Cards */
+.wrd-action-card {
+  background: #f0fdfa;
+  border: 1.5px solid #5eead4;
+  border-radius: var(--wrd-radius-md);
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--wrd-shadow-card);
+  flex-shrink: 0;
+}
+
+.wrd-action-card__text {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #0f766e;
+  line-height: 1.25;
+}
+
+.wrd-action-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.wrd-action-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.wrd-action-card__year {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Gujarat Map */
+.wrd-map-wrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrd-map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Tooltips */
+.wrd-tooltip {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  padding: 6px 10px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
+  font-size: 0.72rem !important;
+  color: #0f172a !important;
+  z-index: 100;
+}
+
+.wrd-tooltip__title {
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #0f172a;
+}
+
+.wrd-tooltip__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+/* Summary Table View */
+.wrd-summary-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.wrd-summary-card {
+  background: #ffffff;
+  border: 1px solid var(--wrd-border);
+  border-radius: var(--wrd-radius-lg);
+  padding: 16px;
+  box-shadow: var(--wrd-shadow-card);
+}
+
+.wrd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.wrd-table th {
+  background: #f8fafc;
+  padding: 8px 10px;
+  font-weight: 700;
+  color: #334155;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.wrd-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+}
+
+.wrd-table tr:hover {
+  background: #f8fafc;
+}

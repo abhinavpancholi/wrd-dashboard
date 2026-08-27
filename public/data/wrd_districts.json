@@ -1,0 +1,200 @@
+[
+  {
+    "code": 438,
+    "name": "AHMADABAD",
+    "total_farmers": 5392,
+    "total_command": 7971.949999999996
+  },
+  {
+    "code": 439,
+    "name": "AMRELI",
+    "total_farmers": 36648,
+    "total_command": 58743.01
+  },
+  {
+    "code": 440,
+    "name": "ANAND",
+    "total_farmers": 2109,
+    "total_command": 2634.6600000000008
+  },
+  {
+    "code": 672,
+    "name": "ARVALLI",
+    "total_farmers": 13101,
+    "total_command": 18656.940000000006
+  },
+  {
+    "code": 441,
+    "name": "BANAS KANTHA",
+    "total_farmers": 127283,
+    "total_command": 177288.16
+  },
+  {
+    "code": 442,
+    "name": "BHARUCH",
+    "total_farmers": 4946,
+    "total_command": 6927.109999999996
+  },
+  {
+    "code": 443,
+    "name": "BHAVNAGAR",
+    "total_farmers": 33699,
+    "total_command": 49200.180000000015
+  },
+  {
+    "code": 676,
+    "name": "BOTAD",
+    "total_farmers": 33298,
+    "total_command": 52665.56999999995
+  },
+  {
+    "code": 668,
+    "name": "CHHOTAUDEPUR",
+    "total_farmers": 5427,
+    "total_command": 7139.829999999998
+  },
+  {
+    "code": 445,
+    "name": "DOHAD",
+    "total_farmers": 4394,
+    "total_command": 5734.929999999999
+  },
+  {
+    "code": 444,
+    "name": "DANG",
+    "total_farmers": 2382,
+    "total_command": 3054.8999999999996
+  },
+  {
+    "code": 674,
+    "name": "DEVBHUMI DWARKA",
+    "total_farmers": 30457,
+    "total_command": 48475.55999999998
+  },
+  {
+    "code": 446,
+    "name": "GANDHINAGAR",
+    "total_farmers": 9126,
+    "total_command": 12039.769999999997
+  },
+  {
+    "code": 675,
+    "name": "GIR SOMNATH",
+    "total_farmers": 17321,
+    "total_command": 23336.749999999993
+  },
+  {
+    "code": 447,
+    "name": "JAMNAGAR",
+    "total_farmers": 19831,
+    "total_command": 31838.989999999994
+  },
+  {
+    "code": 448,
+    "name": "JUNAGADH",
+    "total_farmers": 41701,
+    "total_command": 56941.34999999998
+  },
+  {
+    "code": 449,
+    "name": "KACHCHH",
+    "total_farmers": 28983,
+    "total_command": 50798.78999999996
+  },
+  {
+    "code": 450,
+    "name": "KHEDA",
+    "total_farmers": 6614,
+    "total_command": 7396.069999999998
+  },
+  {
+    "code": 451,
+    "name": "MAHESANA",
+    "total_farmers": 17976,
+    "total_command": 21072.30999999999
+  },
+  {
+    "code": 669,
+    "name": "MAHISAGAR",
+    "total_farmers": 1473,
+    "total_command": 1991.3199999999988
+  },
+  {
+    "code": 673,
+    "name": "MORBI",
+    "total_farmers": 14062,
+    "total_command": 21460.969999999987
+  },
+  {
+    "code": 452,
+    "name": "NARMADA",
+    "total_farmers": 6298,
+    "total_command": 7314.229999999999
+  },
+  {
+    "code": 453,
+    "name": "NAVSARI",
+    "total_farmers": 3186,
+    "total_command": 3549.6200000000017
+  },
+  {
+    "code": 454,
+    "name": "PANCH MAHALS",
+    "total_farmers": 2336,
+    "total_command": 3310.620000000002
+  },
+  {
+    "code": 455,
+    "name": "PATAN",
+    "total_farmers": 16730,
+    "total_command": 25213.039999999997
+  },
+  {
+    "code": 456,
+    "name": "PORBANDAR",
+    "total_farmers": 10117,
+    "total_command": 13915.769999999993
+  },
+  {
+    "code": 457,
+    "name": "RAJKOT",
+    "total_farmers": 35603,
+    "total_command": 53420.660000000025
+  },
+  {
+    "code": 458,
+    "name": "SABAR KANTHA",
+    "total_farmers": 26808,
+    "total_command": 35856.39999999999
+  },
+  {
+    "code": 459,
+    "name": "SURAT",
+    "total_farmers": 6233,
+    "total_command": 8555.889999999998
+  },
+  {
+    "code": 460,
+    "name": "SURENDRANAGAR",
+    "total_farmers": 34247,
+    "total_command": 56113.45999999996
+  },
+  {
+    "code": 641,
+    "name": "TAPI",
+    "total_farmers": 3856,
+    "total_command": 5280.519999999999
+  },
+  {
+    "code": 461,
+    "name": "VADODARA",
+    "total_farmers": 3807,
+    "total_command": 5346.419999999999
+  },
+  {
+    "code": 462,
+    "name": "VALSAD",
+    "total_farmers": 2840,
+    "total_command": 3616.300000000003
+  }
+]

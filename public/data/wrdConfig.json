@@ -1,0 +1,18 @@
+{
+  "department": "Water Resource Department",
+  "vision": "Viksit Gujarat Vision @2047",
+  "interventions": 9,
+  "actionableSteps": 12,
+  "kpis": 14,
+  "defaultFY": "2026-27",
+  "fyList": [
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26",
+    "2026-27",
+    "2027-28",
+    "2028-29",
+    "2029-30"
+  ]
+}
