@@ -11,18 +11,37 @@ const FY_OPTIONS = [
 ]
 
 function FyGrid() {
-  const { selectedFY, toggleFY } = useWrdStore()
+  const { selectedFY, setFY } = useWrdStore()
 
   return (
-    <div className="wrd-fy-card">
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 6,
+      padding: '12px 14px',
+      background: 'rgba(255, 255, 255, 0.05)',
+      borderRadius: 8,
+      marginBottom: 12,
+      border: '1px solid rgba(255, 255, 255, 0.1)'
+    }}>
       {FY_OPTIONS.map((fy) => {
         const isSelected = selectedFY === fy
         return (
           <button
             key={fy}
-            className={`wrd-fy-btn ${isSelected ? 'wrd-fy-btn--active' : ''}`}
-            onClick={() => toggleFY(fy)}
-            title={isSelected ? `Click to clear ${fy} filter` : `Filter by ${fy}`}
+            onClick={() => setFY(fy)}
+            style={{
+              padding: '6px 4px',
+              fontSize: '0.72rem',
+              fontWeight: isSelected ? 700 : 500,
+              color: isSelected ? '#ffffff' : '#cbd5e1',
+              backgroundColor: isSelected ? '#0284c7' : 'rgba(30, 41, 59, 0.6)',
+              border: isSelected ? '1px solid #38bdf8' : '1px solid rgba(255, 255, 255, 0.15)',
+              borderRadius: 4,
+              cursor: 'pointer',
+              textAlign: 'center',
+              transition: 'all 0.15s ease'
+            }}
           >
             {fy}
           </button>
