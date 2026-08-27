@@ -72,6 +72,11 @@ export default function DashboardLayout() {
       <Sidebar />
       <div className="wrd-main-layout">
         <Header />
+        <div className="wrd-mission-banner">
+          <div className="wrd-mission-banner__text">
+            Gujarat Water Resources Development Corporation Ltd. was created in 1975 to concentrate on ground water investigation, exploration, management &amp; recharge works in the State of Gujarat.
+          </div>
+        </div>
         <Outlet />
       </div>
     </div>
