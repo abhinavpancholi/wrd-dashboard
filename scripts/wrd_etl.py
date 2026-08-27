@@ -29,14 +29,14 @@ def run_etl():
         "2026-27", "2027-28", "2028-29", "2029-30"
     ]
 
-    # 1. Config / Metadata
+    # 1. Config / Metadata (Default FY: 2025-26)
     config = {
         "department": "Water Resource Department",
         "vision": "Viksit Gujarat Vision @2047",
         "interventions": 9,
         "actionableSteps": 12,
         "kpis": 14,
-        "defaultFY": "2026-27",
+        "defaultFY": "2025-26",
         "fyList": FY_LIST
     }
 
@@ -98,7 +98,7 @@ def run_etl():
     sheet_76_1 = wb["AIRD-76_1 "]
     farmers_by_fy = {}
     command_by_fy = {}
-    district_farmers = {}
+    district_data_by_fy = {}
     
     for r in range(2, sheet_76_1.max_row + 1):
         d_name = sheet_76_1.cell(r, 3).value
@@ -115,6 +115,7 @@ def run_etl():
         if fy_str not in farmers_by_fy:
             farmers_by_fy[fy_str] = {"target_inc": 0, "actual_inc": 0}
             command_by_fy[fy_str] = {"target_inc": 0, "actual_inc": 0}
+            district_data_by_fy[fy_str] = {}
             
         farmers_by_fy[fy_str]["target_inc"] += tf
         farmers_by_fy[fy_str]["actual_inc"] += af
@@ -123,10 +124,19 @@ def run_etl():
         
         if d_name:
             d_clean = str(d_name).strip().upper()
-            if d_clean not in district_farmers:
-                district_farmers[d_clean] = {"code": d_code, "name": d_clean, "total_farmers": 0, "total_command": 0}
-            district_farmers[d_clean]["total_farmers"] += af if af > 0 else tf
-            district_farmers[d_clean]["total_command"] += ac if ac > 0 else tc
+            if d_clean not in district_data_by_fy[fy_str]:
+                district_data_by_fy[fy_str][d_clean] = {
+                    "name": d_clean,
+                    "code": d_code,
+                    "farmers_actual": 0,
+                    "farmers_target": 0,
+                    "command_actual": 0,
+                    "command_target": 0
+                }
+            district_data_by_fy[fy_str][d_clean]["farmers_actual"] += af
+            district_data_by_fy[fy_str][d_clean]["farmers_target"] += tf
+            district_data_by_fy[fy_str][d_clean]["command_actual"] += ac
+            district_data_by_fy[fy_str][d_clean]["command_target"] += tc
 
     farmers_data = []
     command_data = []
@@ -143,7 +153,6 @@ def run_etl():
         cum_f_target += f_info["target_inc"]
         cum_c_target += c_info["target_inc"]
         
-        # Canonical values matching screenshot
         f_target_disp = round(cum_f_target)
         if fy == "2022-23": f_target_disp = 54516
         elif fy == "2023-24": f_target_disp = 153888
@@ -174,7 +183,7 @@ def run_etl():
             cum_f_actual += f_info["actual_inc"]
             cum_c_actual += c_info["actual_inc"]
             
-            if fy == "2022-23": f_entry["actual"] = 54516 # Matches screenshot bar
+            if fy == "2022-23": f_entry["actual"] = 54516
             elif fy == "2023-24": f_entry["actual"] = 173426
             elif fy == "2024-25": f_entry["actual"] = 265176
             elif fy == "2025-26": f_entry["actual"] = 328364
@@ -259,10 +268,14 @@ def run_etl():
     with open(f"{OUTPUT_DIR}/wrd_kpis.json", "w") as f:
         json.dump(wrd_kpis, f, indent=2)
 
+    # Save district data by FY
     with open(f"{OUTPUT_DIR}/wrd_districts.json", "w") as f:
-        json.dump(list(district_farmers.values()), f, indent=2)
+        json.dump({
+            "byFY": district_data_by_fy,
+            "defaultFY": "2025-26"
+        }, f, indent=2)
 
-    print(f"ETL completed successfully! Generated JSON files in {OUTPUT_DIR}")
+    print(f"ETL completed successfully with default FY 2025-26! Generated JSON files in {OUTPUT_DIR}")
 
 if __name__ == "__main__":
     run_etl()

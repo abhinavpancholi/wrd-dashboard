@@ -44,7 +44,7 @@ function StatCards() {
 }
 
 function FySelector() {
-  const { selectedFY, setFY } = useWrdStore()
+  const { selectedFY, toggleFY } = useWrdStore()
 
   return (
     <div className="wrd-fy-container">
@@ -56,7 +56,8 @@ function FySelector() {
             <button
               key={fy}
               className={`wrd-fy-btn ${isSelected ? 'wrd-fy-btn--active' : ''}`}
-              onClick={() => setFY(fy)}
+              onClick={() => toggleFY(fy)}
+              title={isSelected ? `Click to clear ${fy} filter` : `Filter by ${fy}`}
             >
               {fy}
             </button>

@@ -1,8 +1,9 @@
 import React from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, LabelList
+  Tooltip, ResponsiveContainer, Cell, LabelList
 } from 'recharts'
+import useWrdStore from '../../context/WrdStore'
 import { formatIndian } from '../../utils/formatters'
 
 function CustomTooltip({ active, payload, label }) {
@@ -18,8 +19,19 @@ function CustomTooltip({ active, payload, label }) {
   )
 }
 
-export default function CheckdamsPondsBar({ data, selectedFY }) {
+export default function CheckdamsPondsBar({ data }) {
+  const { selectedFY, toggleFY } = useWrdStore()
+
   if (!data?.length) return null
+
+  const handleBarClick = (entry) => {
+    if (entry?.fy) {
+      toggleFY(entry.fy)
+    }
+  }
+
+  // Check if selectedFY matches one of the years in checkdam data
+  const hasSelectedFYInCheckdams = data.some(d => d.fy === selectedFY)
 
   return (
     <div className="wrd-chart-panel" style={{ flex: '1 1 0' }}>
@@ -54,10 +66,21 @@ export default function CheckdamsPondsBar({ data, selectedFY }) {
             <Tooltip content={<CustomTooltip />} />
             <Bar
               dataKey="value"
-              fill="#7dd3fc"
               radius={[3, 3, 0, 0]}
               maxBarSize={22}
+              onClick={handleBarClick}
             >
+              {data.map((entry, index) => {
+                const isDimmed = selectedFY && hasSelectedFYInCheckdams && entry.fy !== selectedFY
+                return (
+                  <Cell
+                    key={`checkdam-${index}`}
+                    fill="#7dd3fc"
+                    opacity={isDimmed ? 0.25 : 1}
+                    cursor="pointer"
+                  />
+                )
+              })}
               <LabelList
                 dataKey="value"
                 position="top"

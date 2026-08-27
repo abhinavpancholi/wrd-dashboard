@@ -1,200 +1,2133 @@
-[
-  {
-    "code": 438,
-    "name": "AHMADABAD",
-    "total_farmers": 5392,
-    "total_command": 7971.949999999996
+{
+  "byFY": {
+    "2022-23": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 975,
+        "farmers_target": 486.56,
+        "command_actual": 1288.3,
+        "command_target": 778.48
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 2913,
+        "farmers_target": 4082.04,
+        "command_actual": 4883.4,
+        "command_target": 6531.24
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 396,
+        "farmers_target": 157.84,
+        "command_actual": 371.34999999999997,
+        "command_target": 252.56
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 2063,
+        "farmers_target": 1032.96,
+        "command_actual": 2669.41,
+        "command_target": 1652.72
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 17924,
+        "farmers_target": 11833.04,
+        "command_actual": 22538.41,
+        "command_target": 18932.88
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 658,
+        "farmers_target": 474.12,
+        "command_actual": 778.83,
+        "command_target": 758.6
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 3353,
+        "farmers_target": 2976.8,
+        "command_actual": 4747.49,
+        "command_target": 4762.84
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 3679,
+        "farmers_target": 2916.2,
+        "command_actual": 5861.92,
+        "command_target": 4665.96
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 657,
+        "farmers_target": 417.0,
+        "command_actual": 722.61,
+        "command_target": 667.2
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 386,
+        "farmers_target": 392.04,
+        "command_actual": 432.06,
+        "command_target": 627.24
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 431,
+        "farmers_target": 113.48,
+        "command_actual": 572.8,
+        "command_target": 181.6
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 4668,
+        "farmers_target": 2735.36,
+        "command_actual": 7537.429999999999,
+        "command_target": 4376.6
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 1304,
+        "farmers_target": 582.48,
+        "command_actual": 1589.96,
+        "command_target": 931.96
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 2446,
+        "farmers_target": 1568.2,
+        "command_actual": 2856.66,
+        "command_target": 2509.08
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 2237,
+        "farmers_target": 2234.36,
+        "command_actual": 3759.73,
+        "command_target": 3574.96
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 5640,
+        "farmers_target": 3680.6,
+        "command_actual": 6987.14,
+        "command_target": 5888.92
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 3881,
+        "farmers_target": 2368.8,
+        "command_actual": 7227.87,
+        "command_target": 3790.08
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 1248,
+        "farmers_target": 421.4,
+        "command_actual": 1082.73,
+        "command_target": 674.24
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 3073,
+        "farmers_target": 1325.12,
+        "command_actual": 2585.74,
+        "command_target": 2120.2
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 290,
+        "farmers_target": 116.48,
+        "command_actual": 353.0,
+        "command_target": 186.4
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 1664,
+        "farmers_target": 1172.84,
+        "command_actual": 2471.5,
+        "command_target": 1876.56
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 717,
+        "farmers_target": 344.0,
+        "command_actual": 672.47,
+        "command_target": 550.36
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 425,
+        "farmers_target": 211.6,
+        "command_actual": 364.41999999999996,
+        "command_target": 338.56
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 171,
+        "farmers_target": 218.16,
+        "command_actual": 215.43,
+        "command_target": 349.04
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 2034,
+        "farmers_target": 1480.96,
+        "command_actual": 2514.11,
+        "command_target": 2369.56
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 1651,
+        "farmers_target": 774.92,
+        "command_actual": 2130.02,
+        "command_target": 1239.88
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 3570,
+        "farmers_target": 3718.56,
+        "command_actual": 5215.4800000000005,
+        "command_target": 5949.68
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 3590,
+        "farmers_target": 1853.56,
+        "command_actual": 4535.030000000001,
+        "command_target": 2965.68
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 863,
+        "farmers_target": 610.32,
+        "command_actual": 956.91,
+        "command_target": 976.48
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 3479,
+        "farmers_target": 3346.36,
+        "command_actual": 5743.860000000001,
+        "command_target": 5354.2
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 633,
+        "farmers_target": 285.56,
+        "command_actual": 813.54,
+        "command_target": 456.88
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 525,
+        "farmers_target": 365.8,
+        "command_actual": 650.9300000000001,
+        "command_target": 585.32
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 208,
+        "farmers_target": 218.68,
+        "command_actual": 260.08000000000004,
+        "command_target": 349.88
+      }
+    },
+    "2023-24": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 807,
+        "farmers_target": 887.0,
+        "command_actual": 1175.5,
+        "command_target": 1418.96
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 4291,
+        "farmers_target": 7440,
+        "command_actual": 7059.540000000001,
+        "command_target": 11904.6
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 288,
+        "farmers_target": 288,
+        "command_actual": 347.0,
+        "command_target": 460.36
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 2020,
+        "farmers_target": 1883.0,
+        "command_actual": 2583.83,
+        "command_target": 3012.44
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 19669,
+        "farmers_target": 21568,
+        "command_actual": 23120.72,
+        "command_target": 34509.28
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 682,
+        "farmers_target": 864,
+        "command_actual": 846.22,
+        "command_target": 1382.72
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 5813,
+        "farmers_target": 5426.0,
+        "command_actual": 7915.549999999999,
+        "command_target": 8681.32
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 6683,
+        "farmers_target": 5315.0,
+        "command_actual": 10640.65,
+        "command_target": 8504.68
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 698,
+        "farmers_target": 760,
+        "command_actual": 815.6800000000001,
+        "command_target": 1216.16
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 523,
+        "farmers_target": 715.0,
+        "command_actual": 552.1400000000001,
+        "command_target": 1143.32
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 424,
+        "farmers_target": 207.0,
+        "command_actual": 547.63,
+        "command_target": 330.96
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 4715,
+        "farmers_target": 4986.0,
+        "command_actual": 7611.13,
+        "command_target": 7977.28
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 1745,
+        "farmers_target": 1062.0,
+        "command_actual": 2088.87,
+        "command_target": 1698.68
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 2304,
+        "farmers_target": 2858.0,
+        "command_actual": 2661.52,
+        "command_target": 4573.36
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 2136,
+        "farmers_target": 4073.0,
+        "command_actual": 3378.33,
+        "command_target": 6516.12
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 6645,
+        "farmers_target": 6709.0,
+        "command_actual": 7971.959999999999,
+        "command_target": 10733.88
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 4536,
+        "farmers_target": 4318.0,
+        "command_actual": 8418.539999999999,
+        "command_target": 6908.24
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 1135,
+        "farmers_target": 768,
+        "command_actual": 1042.77,
+        "command_target": 1228.92
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 3025,
+        "farmers_target": 2415.0,
+        "command_actual": 2831.29,
+        "command_target": 3864.56
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 254,
+        "farmers_target": 212,
+        "command_actual": 304.43,
+        "command_target": 339.76
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 2243,
+        "farmers_target": 2138.0,
+        "command_actual": 3245.6000000000004,
+        "command_target": 3420.48
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 1089,
+        "farmers_target": 627.0,
+        "command_actual": 1090.64,
+        "command_target": 1003.16
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 486,
+        "farmers_target": 386.0,
+        "command_actual": 454.34,
+        "command_target": 617.08
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 335,
+        "farmers_target": 398.0,
+        "command_actual": 425.78,
+        "command_target": 636.2
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 2623,
+        "farmers_target": 2699.0,
+        "command_actual": 3612.4199999999996,
+        "command_target": 4319.04
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 2211,
+        "farmers_target": 1412,
+        "command_actual": 2684.6,
+        "command_target": 2259.96
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 5700,
+        "farmers_target": 6778.0,
+        "command_actual": 8056.04,
+        "command_target": 10844.56
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 4676,
+        "farmers_target": 3379.0,
+        "command_actual": 5642.35,
+        "command_target": 5405.6
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 939,
+        "farmers_target": 1112,
+        "command_actual": 1096.3400000000001,
+        "command_target": 1779.88
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 5426,
+        "farmers_target": 6100,
+        "command_actual": 9216.810000000001,
+        "command_target": 9759.16
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 580,
+        "farmers_target": 520,
+        "command_actual": 762.9099999999999,
+        "command_target": 832.76
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 512,
+        "farmers_target": 667.0,
+        "command_actual": 627.53,
+        "command_target": 1066.84
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 461,
+        "farmers_target": 398.0,
+        "command_actual": 524.1600000000001,
+        "command_target": 637.76
+      }
+    },
+    "2024-25": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 682,
+        "farmers_target": 1067.36,
+        "command_actual": 915.7199999999999,
+        "command_target": 1706.0
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 4516,
+        "farmers_target": 8945.6,
+        "command_actual": 6993.27,
+        "command_target": 14312.92
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 395,
+        "farmers_target": 346.12,
+        "command_actual": 422.64,
+        "command_target": 553.52
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 2154,
+        "farmers_target": 2263.68,
+        "command_actual": 2863.16,
+        "command_target": 3621.88
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 18497,
+        "farmers_target": 25931.64,
+        "command_actual": 21890.33,
+        "command_target": 41490.6
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 625,
+        "farmers_target": 1039.28,
+        "command_actual": 727.52,
+        "command_target": 1662.44
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 5143,
+        "farmers_target": 6522.52,
+        "command_actual": 6759.58,
+        "command_target": 10437.6
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 4536,
+        "farmers_target": 6390.76,
+        "command_actual": 6952.669999999999,
+        "command_target": 10225.2
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 959,
+        "farmers_target": 913.88,
+        "command_actual": 1130.8999999999999,
+        "command_target": 1462.2
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 546,
+        "farmers_target": 858.68,
+        "command_actual": 495.05000000000007,
+        "command_target": 1374.6
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 398,
+        "farmers_target": 248.72,
+        "command_actual": 435.33000000000004,
+        "command_target": 397.92
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 4321,
+        "farmers_target": 5994.44,
+        "command_actual": 6633.32,
+        "command_target": 9591.12
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 1819,
+        "farmers_target": 1276.44,
+        "command_actual": 2088.34,
+        "command_target": 2042.32
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 2260,
+        "farmers_target": 3436.6,
+        "command_actual": 2551.66,
+        "command_target": 5498.6
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 2177,
+        "farmers_target": 4896.28,
+        "command_actual": 3485.0,
+        "command_target": 7834.36
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 6311,
+        "farmers_target": 8065.84,
+        "command_actual": 7072.73,
+        "command_target": 12905.36
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 4793,
+        "farmers_target": 5191.08,
+        "command_actual": 8792.54,
+        "command_target": 8305.8
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 1229,
+        "farmers_target": 923.16,
+        "command_actual": 1039.57,
+        "command_target": 1477.56
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 3339,
+        "farmers_target": 2904.48,
+        "command_actual": 3178.6400000000003,
+        "command_target": 4646.36
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 211,
+        "farmers_target": 255.28,
+        "command_actual": 241.64999999999998,
+        "command_target": 408.48
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 2663,
+        "farmers_target": 2570.28,
+        "command_actual": 3815.9700000000003,
+        "command_target": 4112.44
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 1531,
+        "farmers_target": 753.8,
+        "command_actual": 1538.1100000000001,
+        "command_target": 1206.12
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 660,
+        "farmers_target": 464.36,
+        "command_actual": 583.51,
+        "command_target": 741.96
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 453,
+        "farmers_target": 477.84,
+        "command_actual": 576.18,
+        "command_target": 764.88
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 2672,
+        "farmers_target": 3244.76,
+        "command_actual": 3949.88,
+        "command_target": 5192.76
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 1321,
+        "farmers_target": 1698.2,
+        "command_actual": 1557.1499999999999,
+        "command_target": 2717.16
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 4802,
+        "farmers_target": 8149.36,
+        "command_actual": 6366.24,
+        "command_target": 13038.44
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 5656,
+        "farmers_target": 4061.96,
+        "command_actual": 6619.700000000001,
+        "command_target": 6499.16
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 788,
+        "farmers_target": 1337.28,
+        "command_actual": 909.72,
+        "command_target": 2139.92
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 4419,
+        "farmers_target": 7333.4,
+        "command_actual": 7198.81,
+        "command_target": 11733.48
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 682,
+        "farmers_target": 625.8,
+        "command_actual": 806.86,
+        "command_target": 1001.24
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 511,
+        "farmers_target": 801.8,
+        "command_actual": 639.95,
+        "command_target": 1282.68
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 681,
+        "farmers_target": 479.08,
+        "command_actual": 661.99,
+        "command_target": 766.76
+      }
+    },
+    "2025-26": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 432,
+        "farmers_target": 656,
+        "command_actual": 595.3100000000001,
+        "command_target": 1051.92
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 3968,
+        "farmers_target": 5512,
+        "command_actual": 6271.92,
+        "command_target": 8825.4
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 214,
+        "farmers_target": 216,
+        "command_actual": 196.86999999999998,
+        "command_target": 341.28
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 1552,
+        "farmers_target": 1392,
+        "command_actual": 2054.62,
+        "command_target": 2233.24
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 10441,
+        "farmers_target": 15992,
+        "command_actual": 12527.18,
+        "command_target": 25583.28
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 549,
+        "farmers_target": 640,
+        "command_actual": 679.5,
+        "command_target": 1025.08
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 4094,
+        "farmers_target": 4024,
+        "command_actual": 5322.5199999999995,
+        "command_target": 6435.88
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 3440,
+        "farmers_target": 3936,
+        "command_actual": 5252.889999999999,
+        "command_target": 6304.92
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 985,
+        "farmers_target": 564,
+        "command_actual": 1044.72,
+        "command_target": 901.6
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 923,
+        "farmers_target": 532,
+        "command_actual": 1035.04,
+        "command_target": 847.6
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 553,
+        "farmers_target": 152,
+        "command_actual": 566.8199999999999,
+        "command_target": 245.36
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 2705,
+        "farmers_target": 3696,
+        "command_actual": 4221.84,
+        "command_target": 5913.92
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 1266,
+        "farmers_target": 788,
+        "command_actual": 1487.4800000000002,
+        "command_target": 1259.32
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 2263,
+        "farmers_target": 2120,
+        "command_actual": 2383.8700000000003,
+        "command_target": 3390.44
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 1809,
+        "farmers_target": 3020,
+        "command_actual": 2860.2499999999995,
+        "command_target": 4830.68
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 4209,
+        "farmers_target": 4976,
+        "command_actual": 4672.5599999999995,
+        "command_target": 7957.52
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 3613,
+        "farmers_target": 3200,
+        "command_actual": 6899.5199999999995,
+        "command_target": 5121.4
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 842,
+        "farmers_target": 572,
+        "command_actual": 769.08,
+        "command_target": 911.08
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 1739,
+        "farmers_target": 1792,
+        "command_actual": 1590.3999999999999,
+        "command_target": 2864.96
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 126,
+        "farmers_target": 156,
+        "command_actual": 135.12,
+        "command_target": 251.88
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 1460,
+        "farmers_target": 1584,
+        "command_actual": 2292.54,
+        "command_target": 2535.76
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 1185,
+        "farmers_target": 464,
+        "command_actual": 1187.09,
+        "command_target": 743.68
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 527,
+        "farmers_target": 288,
+        "command_actual": 408.95,
+        "command_target": 457.48
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 257,
+        "farmers_target": 296,
+        "command_actual": 301.07,
+        "command_target": 471.64
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 1801,
+        "farmers_target": 2000,
+        "command_actual": 2970.0699999999997,
+        "command_target": 3201.88
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 950,
+        "farmers_target": 1048,
+        "command_actual": 1177.76,
+        "command_target": 1675.4
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 2443,
+        "farmers_target": 5024,
+        "command_actual": 3234.1,
+        "command_target": 8039.56
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 3366,
+        "farmers_target": 2504,
+        "command_actual": 3831.9600000000005,
+        "command_target": 4007.4
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 507,
+        "farmers_target": 824,
+        "command_actual": 579.16,
+        "command_target": 1319.48
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 3739,
+        "farmers_target": 4520,
+        "command_actual": 6462.779999999999,
+        "command_target": 7234.92
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 489,
+        "farmers_target": 388,
+        "command_actual": 551.29,
+        "command_target": 617.36
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 371,
+        "farmers_target": 496,
+        "command_actual": 422.73,
+        "command_target": 790.88
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 370,
+        "farmers_target": 296,
+        "command_actual": 373.59000000000003,
+        "command_target": 472.8
+      }
+    },
+    "2026-27": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 0,
+        "farmers_target": 624,
+        "command_actual": 0,
+        "command_target": 999.28
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 0,
+        "farmers_target": 5240,
+        "command_actual": 0,
+        "command_target": 8383.72
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 0,
+        "farmers_target": 204,
+        "command_actual": 0,
+        "command_target": 324.2
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 0,
+        "farmers_target": 1328,
+        "command_actual": 0,
+        "command_target": 2121.48
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 0,
+        "farmers_target": 15188,
+        "command_actual": 0,
+        "command_target": 24302.88
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 0,
+        "farmers_target": 608,
+        "command_actual": 0,
+        "command_target": 973.76
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 0,
+        "farmers_target": 3824,
+        "command_actual": 0,
+        "command_target": 6113.76
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 0,
+        "farmers_target": 3740,
+        "command_actual": 0,
+        "command_target": 5989.36
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 0,
+        "farmers_target": 532,
+        "command_actual": 0,
+        "command_target": 856.48
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 0,
+        "farmers_target": 504,
+        "command_actual": 0,
+        "command_target": 805.16
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 0,
+        "farmers_target": 144,
+        "command_actual": 0,
+        "command_target": 233.08
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 0,
+        "farmers_target": 3512,
+        "command_actual": 0,
+        "command_target": 5617.96
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 0,
+        "farmers_target": 748,
+        "command_actual": 0,
+        "command_target": 1196.28
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 0,
+        "farmers_target": 2012,
+        "command_actual": 0,
+        "command_target": 3220.76
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 0,
+        "farmers_target": 2868,
+        "command_actual": 0,
+        "command_target": 4588.92
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 0,
+        "farmers_target": 4724,
+        "command_actual": 0,
+        "command_target": 7559.24
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 0,
+        "farmers_target": 3040,
+        "command_actual": 0,
+        "command_target": 4865.08
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 0,
+        "farmers_target": 540,
+        "command_actual": 0,
+        "command_target": 865.48
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 0,
+        "farmers_target": 1700,
+        "command_actual": 0,
+        "command_target": 2721.56
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 0,
+        "farmers_target": 148,
+        "command_actual": 0,
+        "command_target": 239.28
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 0,
+        "farmers_target": 1508,
+        "command_actual": 0,
+        "command_target": 2408.84
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 0,
+        "farmers_target": 444,
+        "command_actual": 0,
+        "command_target": 706.48
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 0,
+        "farmers_target": 272,
+        "command_actual": 0,
+        "command_target": 434.6
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 448.04
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 0,
+        "farmers_target": 1900,
+        "command_actual": 0,
+        "command_target": 3041.64
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 0,
+        "farmers_target": 996,
+        "command_actual": 0,
+        "command_target": 1591.56
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 0,
+        "farmers_target": 4772,
+        "command_actual": 0,
+        "command_target": 7637.2
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 0,
+        "farmers_target": 2380,
+        "command_actual": 0,
+        "command_target": 3806.84
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 0,
+        "farmers_target": 784,
+        "command_actual": 0,
+        "command_target": 1253.44
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 0,
+        "farmers_target": 4296,
+        "command_actual": 0,
+        "command_target": 6872.8
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 0,
+        "farmers_target": 368,
+        "command_actual": 0,
+        "command_target": 586.48
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 0,
+        "farmers_target": 472,
+        "command_actual": 0,
+        "command_target": 751.32
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 449.12
+      }
+    },
+    "2027-28": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 0,
+        "farmers_target": 624,
+        "command_actual": 0,
+        "command_target": 999.28
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 0,
+        "farmers_target": 5240,
+        "command_actual": 0,
+        "command_target": 8383.72
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 0,
+        "farmers_target": 204,
+        "command_actual": 0,
+        "command_target": 324.2
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 0,
+        "farmers_target": 1328,
+        "command_actual": 0,
+        "command_target": 2121.48
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 0,
+        "farmers_target": 15188,
+        "command_actual": 0,
+        "command_target": 24302.88
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 0,
+        "farmers_target": 608,
+        "command_actual": 0,
+        "command_target": 973.76
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 0,
+        "farmers_target": 3824,
+        "command_actual": 0,
+        "command_target": 6113.76
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 0,
+        "farmers_target": 3740,
+        "command_actual": 0,
+        "command_target": 5989.36
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 0,
+        "farmers_target": 532,
+        "command_actual": 0,
+        "command_target": 856.48
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 0,
+        "farmers_target": 504,
+        "command_actual": 0,
+        "command_target": 805.16
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 0,
+        "farmers_target": 144,
+        "command_actual": 0,
+        "command_target": 233.08
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 0,
+        "farmers_target": 3512,
+        "command_actual": 0,
+        "command_target": 5617.96
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 0,
+        "farmers_target": 748,
+        "command_actual": 0,
+        "command_target": 1196.28
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 0,
+        "farmers_target": 2012,
+        "command_actual": 0,
+        "command_target": 3220.76
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 0,
+        "farmers_target": 2868,
+        "command_actual": 0,
+        "command_target": 4588.92
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 0,
+        "farmers_target": 4724,
+        "command_actual": 0,
+        "command_target": 7559.24
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 0,
+        "farmers_target": 3040,
+        "command_actual": 0,
+        "command_target": 4865.08
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 0,
+        "farmers_target": 540,
+        "command_actual": 0,
+        "command_target": 865.48
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 0,
+        "farmers_target": 1700,
+        "command_actual": 0,
+        "command_target": 2721.56
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 0,
+        "farmers_target": 148,
+        "command_actual": 0,
+        "command_target": 239.28
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 0,
+        "farmers_target": 1508,
+        "command_actual": 0,
+        "command_target": 2408.84
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 0,
+        "farmers_target": 444,
+        "command_actual": 0,
+        "command_target": 706.48
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 0,
+        "farmers_target": 272,
+        "command_actual": 0,
+        "command_target": 434.6
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 448.04
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 0,
+        "farmers_target": 1900,
+        "command_actual": 0,
+        "command_target": 3041.64
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 0,
+        "farmers_target": 996,
+        "command_actual": 0,
+        "command_target": 1591.56
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 0,
+        "farmers_target": 4772,
+        "command_actual": 0,
+        "command_target": 7637.2
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 0,
+        "farmers_target": 2380,
+        "command_actual": 0,
+        "command_target": 3806.84
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 0,
+        "farmers_target": 784,
+        "command_actual": 0,
+        "command_target": 1253.44
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 0,
+        "farmers_target": 4296,
+        "command_actual": 0,
+        "command_target": 6872.8
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 0,
+        "farmers_target": 368,
+        "command_actual": 0,
+        "command_target": 586.48
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 0,
+        "farmers_target": 472,
+        "command_actual": 0,
+        "command_target": 751.32
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 449.12
+      }
+    },
+    "2028-29": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 0,
+        "farmers_target": 624,
+        "command_actual": 0,
+        "command_target": 999.28
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 0,
+        "farmers_target": 5240,
+        "command_actual": 0,
+        "command_target": 8383.72
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 0,
+        "farmers_target": 204,
+        "command_actual": 0,
+        "command_target": 324.2
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 0,
+        "farmers_target": 1328,
+        "command_actual": 0,
+        "command_target": 2121.48
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 0,
+        "farmers_target": 15188,
+        "command_actual": 0,
+        "command_target": 24302.88
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 0,
+        "farmers_target": 608,
+        "command_actual": 0,
+        "command_target": 973.76
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 0,
+        "farmers_target": 3824,
+        "command_actual": 0,
+        "command_target": 6113.76
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 0,
+        "farmers_target": 3740,
+        "command_actual": 0,
+        "command_target": 5989.36
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 0,
+        "farmers_target": 532,
+        "command_actual": 0,
+        "command_target": 856.48
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 0,
+        "farmers_target": 504,
+        "command_actual": 0,
+        "command_target": 805.16
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 0,
+        "farmers_target": 144,
+        "command_actual": 0,
+        "command_target": 233.08
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 0,
+        "farmers_target": 3512,
+        "command_actual": 0,
+        "command_target": 5617.96
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 0,
+        "farmers_target": 748,
+        "command_actual": 0,
+        "command_target": 1196.28
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 0,
+        "farmers_target": 2012,
+        "command_actual": 0,
+        "command_target": 3220.76
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 0,
+        "farmers_target": 2868,
+        "command_actual": 0,
+        "command_target": 4588.92
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 0,
+        "farmers_target": 4724,
+        "command_actual": 0,
+        "command_target": 7559.24
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 0,
+        "farmers_target": 3040,
+        "command_actual": 0,
+        "command_target": 4865.08
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 0,
+        "farmers_target": 540,
+        "command_actual": 0,
+        "command_target": 865.48
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 0,
+        "farmers_target": 1700,
+        "command_actual": 0,
+        "command_target": 2721.56
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 0,
+        "farmers_target": 148,
+        "command_actual": 0,
+        "command_target": 239.28
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 0,
+        "farmers_target": 1508,
+        "command_actual": 0,
+        "command_target": 2408.84
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 0,
+        "farmers_target": 444,
+        "command_actual": 0,
+        "command_target": 706.48
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 0,
+        "farmers_target": 272,
+        "command_actual": 0,
+        "command_target": 434.6
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 448.04
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 0,
+        "farmers_target": 1900,
+        "command_actual": 0,
+        "command_target": 3041.64
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 0,
+        "farmers_target": 996,
+        "command_actual": 0,
+        "command_target": 1591.56
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 0,
+        "farmers_target": 4772,
+        "command_actual": 0,
+        "command_target": 7637.2
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 0,
+        "farmers_target": 2380,
+        "command_actual": 0,
+        "command_target": 3806.84
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 0,
+        "farmers_target": 784,
+        "command_actual": 0,
+        "command_target": 1253.44
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 0,
+        "farmers_target": 4296,
+        "command_actual": 0,
+        "command_target": 6872.8
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 0,
+        "farmers_target": 368,
+        "command_actual": 0,
+        "command_target": 586.48
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 0,
+        "farmers_target": 472,
+        "command_actual": 0,
+        "command_target": 751.32
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 449.12
+      }
+    },
+    "2029-30": {
+      "AHMADABAD": {
+        "name": "AHMADABAD",
+        "code": 438,
+        "farmers_actual": 0,
+        "farmers_target": 624,
+        "command_actual": 0,
+        "command_target": 999.28
+      },
+      "AMRELI": {
+        "name": "AMRELI",
+        "code": 439,
+        "farmers_actual": 0,
+        "farmers_target": 5240,
+        "command_actual": 0,
+        "command_target": 8383.72
+      },
+      "ANAND": {
+        "name": "ANAND",
+        "code": 440,
+        "farmers_actual": 0,
+        "farmers_target": 204,
+        "command_actual": 0,
+        "command_target": 324.2
+      },
+      "ARVALLI": {
+        "name": "ARVALLI",
+        "code": 672,
+        "farmers_actual": 0,
+        "farmers_target": 1328,
+        "command_actual": 0,
+        "command_target": 2121.48
+      },
+      "BANAS KANTHA": {
+        "name": "BANAS KANTHA",
+        "code": 441,
+        "farmers_actual": 0,
+        "farmers_target": 15188,
+        "command_actual": 0,
+        "command_target": 24302.88
+      },
+      "BHARUCH": {
+        "name": "BHARUCH",
+        "code": 442,
+        "farmers_actual": 0,
+        "farmers_target": 608,
+        "command_actual": 0,
+        "command_target": 973.76
+      },
+      "BHAVNAGAR": {
+        "name": "BHAVNAGAR",
+        "code": 443,
+        "farmers_actual": 0,
+        "farmers_target": 3824,
+        "command_actual": 0,
+        "command_target": 6113.76
+      },
+      "BOTAD": {
+        "name": "BOTAD",
+        "code": 676,
+        "farmers_actual": 0,
+        "farmers_target": 3740,
+        "command_actual": 0,
+        "command_target": 5989.36
+      },
+      "CHHOTAUDEPUR": {
+        "name": "CHHOTAUDEPUR",
+        "code": 668,
+        "farmers_actual": 0,
+        "farmers_target": 532,
+        "command_actual": 0,
+        "command_target": 856.48
+      },
+      "DOHAD": {
+        "name": "DOHAD",
+        "code": 445,
+        "farmers_actual": 0,
+        "farmers_target": 504,
+        "command_actual": 0,
+        "command_target": 805.16
+      },
+      "DANG": {
+        "name": "DANG",
+        "code": 444,
+        "farmers_actual": 0,
+        "farmers_target": 144,
+        "command_actual": 0,
+        "command_target": 233.08
+      },
+      "DEVBHUMI DWARKA": {
+        "name": "DEVBHUMI DWARKA",
+        "code": 674,
+        "farmers_actual": 0,
+        "farmers_target": 3512,
+        "command_actual": 0,
+        "command_target": 5617.96
+      },
+      "GANDHINAGAR": {
+        "name": "GANDHINAGAR",
+        "code": 446,
+        "farmers_actual": 0,
+        "farmers_target": 748,
+        "command_actual": 0,
+        "command_target": 1196.28
+      },
+      "GIR SOMNATH": {
+        "name": "GIR SOMNATH",
+        "code": 675,
+        "farmers_actual": 0,
+        "farmers_target": 2012,
+        "command_actual": 0,
+        "command_target": 3220.76
+      },
+      "JAMNAGAR": {
+        "name": "JAMNAGAR",
+        "code": 447,
+        "farmers_actual": 0,
+        "farmers_target": 2868,
+        "command_actual": 0,
+        "command_target": 4588.92
+      },
+      "JUNAGADH": {
+        "name": "JUNAGADH",
+        "code": 448,
+        "farmers_actual": 0,
+        "farmers_target": 4724,
+        "command_actual": 0,
+        "command_target": 7559.24
+      },
+      "KACHCHH": {
+        "name": "KACHCHH",
+        "code": 449,
+        "farmers_actual": 0,
+        "farmers_target": 3040,
+        "command_actual": 0,
+        "command_target": 4865.08
+      },
+      "KHEDA": {
+        "name": "KHEDA",
+        "code": 450,
+        "farmers_actual": 0,
+        "farmers_target": 540,
+        "command_actual": 0,
+        "command_target": 865.48
+      },
+      "MAHESANA": {
+        "name": "MAHESANA",
+        "code": 451,
+        "farmers_actual": 0,
+        "farmers_target": 1700,
+        "command_actual": 0,
+        "command_target": 2721.56
+      },
+      "MAHISAGAR": {
+        "name": "MAHISAGAR",
+        "code": 669,
+        "farmers_actual": 0,
+        "farmers_target": 148,
+        "command_actual": 0,
+        "command_target": 239.28
+      },
+      "MORBI": {
+        "name": "MORBI",
+        "code": 673,
+        "farmers_actual": 0,
+        "farmers_target": 1508,
+        "command_actual": 0,
+        "command_target": 2408.84
+      },
+      "NARMADA": {
+        "name": "NARMADA",
+        "code": 452,
+        "farmers_actual": 0,
+        "farmers_target": 444,
+        "command_actual": 0,
+        "command_target": 706.48
+      },
+      "NAVSARI": {
+        "name": "NAVSARI",
+        "code": 453,
+        "farmers_actual": 0,
+        "farmers_target": 272,
+        "command_actual": 0,
+        "command_target": 434.6
+      },
+      "PANCH MAHALS": {
+        "name": "PANCH MAHALS",
+        "code": 454,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 448.04
+      },
+      "PATAN": {
+        "name": "PATAN",
+        "code": 455,
+        "farmers_actual": 0,
+        "farmers_target": 1900,
+        "command_actual": 0,
+        "command_target": 3041.64
+      },
+      "PORBANDAR": {
+        "name": "PORBANDAR",
+        "code": 456,
+        "farmers_actual": 0,
+        "farmers_target": 996,
+        "command_actual": 0,
+        "command_target": 1591.56
+      },
+      "RAJKOT": {
+        "name": "RAJKOT",
+        "code": 457,
+        "farmers_actual": 0,
+        "farmers_target": 4772,
+        "command_actual": 0,
+        "command_target": 7637.2
+      },
+      "SABAR KANTHA": {
+        "name": "SABAR KANTHA",
+        "code": 458,
+        "farmers_actual": 0,
+        "farmers_target": 2380,
+        "command_actual": 0,
+        "command_target": 3806.84
+      },
+      "SURAT": {
+        "name": "SURAT",
+        "code": 459,
+        "farmers_actual": 0,
+        "farmers_target": 784,
+        "command_actual": 0,
+        "command_target": 1253.44
+      },
+      "SURENDRANAGAR": {
+        "name": "SURENDRANAGAR",
+        "code": 460,
+        "farmers_actual": 0,
+        "farmers_target": 4296,
+        "command_actual": 0,
+        "command_target": 6872.8
+      },
+      "TAPI": {
+        "name": "TAPI",
+        "code": 641,
+        "farmers_actual": 0,
+        "farmers_target": 368,
+        "command_actual": 0,
+        "command_target": 586.48
+      },
+      "VADODARA": {
+        "name": "VADODARA",
+        "code": 461,
+        "farmers_actual": 0,
+        "farmers_target": 472,
+        "command_actual": 0,
+        "command_target": 751.32
+      },
+      "VALSAD": {
+        "name": "VALSAD",
+        "code": 462,
+        "farmers_actual": 0,
+        "farmers_target": 280,
+        "command_actual": 0,
+        "command_target": 449.12
+      }
+    }
   },
-  {
-    "code": 439,
-    "name": "AMRELI",
-    "total_farmers": 36648,
-    "total_command": 58743.01
-  },
-  {
-    "code": 440,
-    "name": "ANAND",
-    "total_farmers": 2109,
-    "total_command": 2634.6600000000008
-  },
-  {
-    "code": 672,
-    "name": "ARVALLI",
-    "total_farmers": 13101,
-    "total_command": 18656.940000000006
-  },
-  {
-    "code": 441,
-    "name": "BANAS KANTHA",
-    "total_farmers": 127283,
-    "total_command": 177288.16
-  },
-  {
-    "code": 442,
-    "name": "BHARUCH",
-    "total_farmers": 4946,
-    "total_command": 6927.109999999996
-  },
-  {
-    "code": 443,
-    "name": "BHAVNAGAR",
-    "total_farmers": 33699,
-    "total_command": 49200.180000000015
-  },
-  {
-    "code": 676,
-    "name": "BOTAD",
-    "total_farmers": 33298,
-    "total_command": 52665.56999999995
-  },
-  {
-    "code": 668,
-    "name": "CHHOTAUDEPUR",
-    "total_farmers": 5427,
-    "total_command": 7139.829999999998
-  },
-  {
-    "code": 445,
-    "name": "DOHAD",
-    "total_farmers": 4394,
-    "total_command": 5734.929999999999
-  },
-  {
-    "code": 444,
-    "name": "DANG",
-    "total_farmers": 2382,
-    "total_command": 3054.8999999999996
-  },
-  {
-    "code": 674,
-    "name": "DEVBHUMI DWARKA",
-    "total_farmers": 30457,
-    "total_command": 48475.55999999998
-  },
-  {
-    "code": 446,
-    "name": "GANDHINAGAR",
-    "total_farmers": 9126,
-    "total_command": 12039.769999999997
-  },
-  {
-    "code": 675,
-    "name": "GIR SOMNATH",
-    "total_farmers": 17321,
-    "total_command": 23336.749999999993
-  },
-  {
-    "code": 447,
-    "name": "JAMNAGAR",
-    "total_farmers": 19831,
-    "total_command": 31838.989999999994
-  },
-  {
-    "code": 448,
-    "name": "JUNAGADH",
-    "total_farmers": 41701,
-    "total_command": 56941.34999999998
-  },
-  {
-    "code": 449,
-    "name": "KACHCHH",
-    "total_farmers": 28983,
-    "total_command": 50798.78999999996
-  },
-  {
-    "code": 450,
-    "name": "KHEDA",
-    "total_farmers": 6614,
-    "total_command": 7396.069999999998
-  },
-  {
-    "code": 451,
-    "name": "MAHESANA",
-    "total_farmers": 17976,
-    "total_command": 21072.30999999999
-  },
-  {
-    "code": 669,
-    "name": "MAHISAGAR",
-    "total_farmers": 1473,
-    "total_command": 1991.3199999999988
-  },
-  {
-    "code": 673,
-    "name": "MORBI",
-    "total_farmers": 14062,
-    "total_command": 21460.969999999987
-  },
-  {
-    "code": 452,
-    "name": "NARMADA",
-    "total_farmers": 6298,
-    "total_command": 7314.229999999999
-  },
-  {
-    "code": 453,
-    "name": "NAVSARI",
-    "total_farmers": 3186,
-    "total_command": 3549.6200000000017
-  },
-  {
-    "code": 454,
-    "name": "PANCH MAHALS",
-    "total_farmers": 2336,
-    "total_command": 3310.620000000002
-  },
-  {
-    "code": 455,
-    "name": "PATAN",
-    "total_farmers": 16730,
-    "total_command": 25213.039999999997
-  },
-  {
-    "code": 456,
-    "name": "PORBANDAR",
-    "total_farmers": 10117,
-    "total_command": 13915.769999999993
-  },
-  {
-    "code": 457,
-    "name": "RAJKOT",
-    "total_farmers": 35603,
-    "total_command": 53420.660000000025
-  },
-  {
-    "code": 458,
-    "name": "SABAR KANTHA",
-    "total_farmers": 26808,
-    "total_command": 35856.39999999999
-  },
-  {
-    "code": 459,
-    "name": "SURAT",
-    "total_farmers": 6233,
-    "total_command": 8555.889999999998
-  },
-  {
-    "code": 460,
-    "name": "SURENDRANAGAR",
-    "total_farmers": 34247,
-    "total_command": 56113.45999999996
-  },
-  {
-    "code": 641,
-    "name": "TAPI",
-    "total_farmers": 3856,
-    "total_command": 5280.519999999999
-  },
-  {
-    "code": 461,
-    "name": "VADODARA",
-    "total_farmers": 3807,
-    "total_command": 5346.419999999999
-  },
-  {
-    "code": 462,
-    "name": "VALSAD",
-    "total_farmers": 2840,
-    "total_command": 3616.300000000003
-  }
-]
+  "defaultFY": "2025-26"
+}

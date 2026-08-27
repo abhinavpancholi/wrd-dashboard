@@ -2,7 +2,7 @@ import React from 'react'
 import useWrdStore from '../../context/WrdStore'
 
 export default function Header() {
-  const selectedFY = useWrdStore((s) => s.selectedFY) || '2026-27'
+  const selectedFY = useWrdStore((s) => s.selectedFY)
 
   return (
     <header className="wrd-header">
@@ -26,7 +26,7 @@ export default function Header() {
           Gujarat Rajya Institution For Transformation
         </div>
         <div className="wrd-header__subtitle">
-          Water Resource Department, {selectedFY}
+          Water Resource Department{selectedFY ? `, ${selectedFY}` : ''}
         </div>
       </div>
 

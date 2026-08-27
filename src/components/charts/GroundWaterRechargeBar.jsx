@@ -3,6 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, Cell, LabelList
 } from 'recharts'
+import useWrdStore from '../../context/WrdStore'
 import { formatIndian } from '../../utils/formatters'
 
 function CustomTooltip({ active, payload }) {
@@ -19,8 +20,16 @@ function CustomTooltip({ active, payload }) {
   )
 }
 
-export default function GroundWaterRechargeBar({ data, selectedFY }) {
+export default function GroundWaterRechargeBar({ data }) {
+  const { selectedFY, toggleFY } = useWrdStore()
+
   if (!data?.length) return null
+
+  const handleBarClick = (entry) => {
+    if (entry?.fy) {
+      toggleFY(entry.fy)
+    }
+  }
 
   return (
     <div className="wrd-chart-panel" style={{ flex: '1.2 1 0' }}>
@@ -59,13 +68,19 @@ export default function GroundWaterRechargeBar({ data, selectedFY }) {
               width={48}
             />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="value" radius={[0, 3, 3, 0]} maxBarSize={11}>
-              {data.map((entry, index) => (
-                <Cell
-                  key={index}
-                  fill={entry.isTarget ? '#7073c1' : '#f29879'}
-                />
-              ))}
+            <Bar dataKey="value" radius={[0, 3, 3, 0]} maxBarSize={11} onClick={handleBarClick}>
+              {data.map((entry, index) => {
+                const isDimmed = selectedFY && entry.fy !== selectedFY
+                const baseColor = entry.isTarget ? '#7073c1' : '#f29879'
+                return (
+                  <Cell
+                    key={`recharge-${index}`}
+                    fill={baseColor}
+                    opacity={isDimmed ? 0.25 : 1}
+                    cursor="pointer"
+                  />
+                )
+              })}
               <LabelList
                 dataKey="value"
                 position="right"

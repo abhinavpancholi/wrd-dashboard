@@ -3,6 +3,7 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, LabelList
 } from 'recharts'
+import useWrdStore from '../../context/WrdStore'
 import { formatIndian } from '../../utils/formatters'
 
 function CustomTooltip({ active, payload, label }) {
@@ -20,8 +21,16 @@ function CustomTooltip({ active, payload, label }) {
   )
 }
 
-export default function ReservoirsDamsLine({ data, selectedFY }) {
+export default function ReservoirsDamsLine({ data }) {
+  const { selectedFY, toggleFY } = useWrdStore()
+
   if (!data?.length) return null
+
+  const handleChartClick = (e) => {
+    if (e?.activePayload?.[0]?.payload?.fy) {
+      toggleFY(e.activePayload[0].payload.fy)
+    }
+  }
 
   return (
     <div className="wrd-chart-panel" style={{ flex: '1 1 0' }}>
@@ -35,9 +44,13 @@ export default function ReservoirsDamsLine({ data, selectedFY }) {
         </div>
       </div>
 
-      <div className="wrd-chart-panel__body">
+      <div className="wrd-chart-panel__body" style={{ cursor: 'pointer' }}>
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={data} margin={{ top: 18, right: 20, bottom: 2, left: 20 }}>
+          <AreaChart
+            data={data}
+            margin={{ top: 18, right: 20, bottom: 2, left: 20 }}
+            onClick={handleChartClick}
+          >
             <defs>
               <linearGradient id="resTargetGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#7073c1" stopOpacity={0.25} />
@@ -75,8 +88,21 @@ export default function ReservoirsDamsLine({ data, selectedFY }) {
               strokeWidth={2}
               fillOpacity={1}
               fill="url(#resTargetGrad)"
-              dot={{ fill: '#7073c1', r: 3 }}
-              activeDot={{ r: 5 }}
+              dot={(props) => {
+                const isSelected = selectedFY && props.payload?.fy === selectedFY
+                return (
+                  <circle
+                    key={`target-res-dot-${props.index}`}
+                    cx={props.cx}
+                    cy={props.cy}
+                    r={isSelected ? 5.5 : 3}
+                    fill={isSelected ? '#4338ca' : '#7073c1'}
+                    stroke={isSelected ? '#ffffff' : 'none'}
+                    strokeWidth={isSelected ? 2 : 0}
+                  />
+                )
+              }}
+              activeDot={{ r: 6 }}
             >
               <LabelList
                 dataKey="target"
@@ -98,8 +124,21 @@ export default function ReservoirsDamsLine({ data, selectedFY }) {
               strokeWidth={2}
               fillOpacity={1}
               fill="url(#resActualGrad)"
-              dot={{ fill: '#f29879', r: 3 }}
-              activeDot={{ r: 5 }}
+              dot={(props) => {
+                const isSelected = selectedFY && props.payload?.fy === selectedFY
+                return (
+                  <circle
+                    key={`actual-res-dot-${props.index}`}
+                    cx={props.cx}
+                    cy={props.cy}
+                    r={isSelected ? 5.5 : 3}
+                    fill={isSelected ? '#c2410c' : '#f29879'}
+                    stroke={isSelected ? '#ffffff' : 'none'}
+                    strokeWidth={isSelected ? 2 : 0}
+                  />
+                )
+              }}
+              activeDot={{ r: 6 }}
             >
               <LabelList
                 dataKey="actual"

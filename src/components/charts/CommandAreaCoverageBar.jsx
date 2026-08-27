@@ -1,8 +1,9 @@
 import React from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, LabelList
+  Tooltip, ResponsiveContainer, Cell, LabelList
 } from 'recharts'
+import useWrdStore from '../../context/WrdStore'
 import { formatIndian } from '../../utils/formatters'
 
 function CustomTooltip({ active, payload, label }) {
@@ -20,8 +21,16 @@ function CustomTooltip({ active, payload, label }) {
   )
 }
 
-export default function CommandAreaCoverageBar({ data, selectedFY }) {
+export default function CommandAreaCoverageBar({ data }) {
+  const { selectedFY, toggleFY } = useWrdStore()
+
   if (!data?.length) return null
+
+  const handleBarClick = (entry) => {
+    if (entry?.fy) {
+      toggleFY(entry.fy)
+    }
+  }
 
   return (
     <div className="wrd-chart-panel" style={{ flex: '1 1 0' }}>
@@ -66,10 +75,21 @@ export default function CommandAreaCoverageBar({ data, selectedFY }) {
             <Bar
               dataKey="target"
               name="Target"
-              fill="#7073c1"
               radius={[0, 3, 3, 0]}
               maxBarSize={11}
+              onClick={handleBarClick}
             >
+              {data.map((entry, index) => {
+                const isDimmed = selectedFY && entry.fy !== selectedFY
+                return (
+                  <Cell
+                    key={`target-cmd-${index}`}
+                    fill="#7073c1"
+                    opacity={isDimmed ? 0.25 : 1}
+                    cursor="pointer"
+                  />
+                )
+              })}
               <LabelList
                 dataKey="target"
                 position="right"
@@ -85,10 +105,21 @@ export default function CommandAreaCoverageBar({ data, selectedFY }) {
             <Bar
               dataKey="actual"
               name="Actual"
-              fill="#f29879"
               radius={[0, 3, 3, 0]}
               maxBarSize={11}
+              onClick={handleBarClick}
             >
+              {data.map((entry, index) => {
+                const isDimmed = selectedFY && entry.fy !== selectedFY
+                return (
+                  <Cell
+                    key={`actual-cmd-${index}`}
+                    fill="#f29879"
+                    opacity={isDimmed ? 0.25 : 1}
+                    cursor="pointer"
+                  />
+                )
+              })}
               <LabelList
                 dataKey="actual"
                 position="right"

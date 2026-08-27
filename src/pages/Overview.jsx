@@ -10,7 +10,7 @@ import CheckdamsPondsBar from '../components/charts/CheckdamsPondsBar'
 import ActionMilestoneCard from '../components/charts/ActionMilestoneCard'
 
 export default function Overview() {
-  const { kpiData, gujaratTopo, districts, selectedFY } = useWrdStore()
+  const { kpiData, gujaratTopo, districtsData } = useWrdStore()
 
   if (!kpiData) return null
 
@@ -20,15 +20,12 @@ export default function Overview() {
       <div className="wrd-col">
         <TrainingIrrigationLine
           data={kpiData.training}
-          selectedFY={selectedFY}
         />
         <ReservoirsDamsLine
           data={kpiData.reservoirs}
-          selectedFY={selectedFY}
         />
         <FarmersUnderMisBar
           data={kpiData.farmers}
-          selectedFY={selectedFY}
         />
       </div>
 
@@ -36,11 +33,10 @@ export default function Overview() {
       <div className="wrd-col">
         <FarmersMisMap
           topoData={gujaratTopo}
-          districtData={districts}
+          districtsData={districtsData}
         />
         <CommandAreaCoverageBar
           data={kpiData.commandArea}
-          selectedFY={selectedFY}
         />
       </div>
 
@@ -48,7 +44,6 @@ export default function Overview() {
       <div className="wrd-col">
         <GroundWaterRechargeBar
           data={kpiData.recharge}
-          selectedFY={selectedFY}
         />
         
         {/* Milestone 1 */}
@@ -65,7 +60,6 @@ export default function Overview() {
 
         <CheckdamsPondsBar
           data={kpiData.checkdams}
-          selectedFY={selectedFY}
         />
       </div>
     </div>

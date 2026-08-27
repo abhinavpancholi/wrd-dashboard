@@ -2,7 +2,8 @@ import { create } from 'zustand'
 
 /**
  * WRD Dashboard Store — Zustand
- * Sourced from wrdConfig.json, wrd_kpis.json, wrd_districts.json, gujarat.json
+ * Default FY is 2025-26 so map has active district data.
+ * Clicking selected FY again removes the filter (sets to null).
  */
 const useWrdStore = create((set, get) => ({
   // State
@@ -10,11 +11,11 @@ const useWrdStore = create((set, get) => ({
   error: null,
   config: null,
   kpiData: null,
-  districts: [],
+  districtsData: null,
   gujaratTopo: null,
 
   // Filters
-  selectedFY: '2026-27',
+  selectedFY: '2025-26',
   selectedDistrict: null,
 
   // Actions
@@ -33,7 +34,7 @@ const useWrdStore = create((set, get) => ({
         throw new Error('Failed to load WRD dashboard data files')
       }
 
-      const [config, kpiData, districts, gujaratTopo] = await Promise.all([
+      const [config, kpiData, districtsData, gujaratTopo] = await Promise.all([
         configRes.json(),
         kpiRes.json(),
         distRes.json(),
@@ -43,8 +44,9 @@ const useWrdStore = create((set, get) => ({
       set({
         config,
         kpiData,
-        districts,
+        districtsData,
         gujaratTopo,
+        selectedFY: config?.defaultFY || '2025-26',
         loading: false
       })
     } catch (err) {
@@ -53,8 +55,13 @@ const useWrdStore = create((set, get) => ({
     }
   },
 
+  // Toggle or set FY filter
   setFY: (fy) => set((state) => ({
-    selectedFY: state.selectedFY === fy ? '2026-27' : fy
+    selectedFY: state.selectedFY === fy ? null : fy
+  })),
+
+  toggleFY: (fy) => set((state) => ({
+    selectedFY: state.selectedFY === fy ? null : fy
   })),
 
   setDistrict: (district) => set((state) => ({
@@ -62,7 +69,7 @@ const useWrdStore = create((set, get) => ({
   })),
 
   resetFilters: () => set({
-    selectedFY: '2026-27',
+    selectedFY: '2025-26',
     selectedDistrict: null
   })
 }))
