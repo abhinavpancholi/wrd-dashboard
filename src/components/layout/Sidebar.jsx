@@ -10,6 +10,28 @@ const FY_OPTIONS = [
   '2028-29', '2029-30'
 ]
 
+function FyGrid() {
+  const { selectedFY, toggleFY } = useWrdStore()
+
+  return (
+    <div className="wrd-fy-card">
+      {FY_OPTIONS.map((fy) => {
+        const isSelected = selectedFY === fy
+        return (
+          <button
+            key={fy}
+            className={`wrd-fy-btn ${isSelected ? 'wrd-fy-btn--active' : ''}`}
+            onClick={() => toggleFY(fy)}
+            title={isSelected ? `Click to clear ${fy} filter` : `Filter by ${fy}`}
+          >
+            {fy}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
 function StatCards() {
   const config = useWrdStore((s) => s.config)
 
@@ -55,47 +77,17 @@ function StatCards() {
   )
 }
 
-function FySelector() {
-  const { selectedFY, toggleFY } = useWrdStore()
-
-  return (
-    <div className="wrd-fy-container">
-      <div className="wrd-fy-title">Financial Year</div>
-      <div className="wrd-fy-grid">
-        {FY_OPTIONS.map((fy) => {
-          const isSelected = selectedFY === fy
-          return (
-            <button
-              key={fy}
-              className={`wrd-fy-btn ${isSelected ? 'wrd-fy-btn--active' : ''}`}
-              onClick={() => toggleFY(fy)}
-              title={isSelected ? `Click to clear ${fy} filter` : `Filter by ${fy}`}
-            >
-              {fy}
-            </button>
-          )
-        })}
-      </div>
-    </div>
-  )
-}
-
 export default function Sidebar() {
   return (
     <aside className="wrd-sidebar">
-      {/* Top Stat Cards */}
+      {/* 1. FY 2-Column Grid at Top */}
+      <FyGrid />
+
+      {/* 2. Stat Cards */}
       <StatCards />
 
-      {/* Nav List */}
+      {/* 3. Navigation - Only Overview */}
       <nav className="wrd-sidebar__nav">
-        <NavLink
-          to="/summary"
-          className={({ isActive }) =>
-            `wrd-nav-item ${isActive ? 'wrd-nav-item--active' : ''}`
-          }
-        >
-          Summary
-        </NavLink>
         <NavLink
           to="/"
           end
@@ -106,9 +98,6 @@ export default function Sidebar() {
           Overview
         </NavLink>
       </nav>
-
-      {/* Bottom FY Grid */}
-      <FySelector />
     </aside>
   )
 }
