@@ -103,6 +103,27 @@ html, body {
   z-index: 20;
 }
 
+.wrd-sidebar-footer__text {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  line-height: 1.3;
+}
+
+.wrd-sidebar-footer {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--wrd-radius-md);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wrd-sidebar__bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
 /* 1. Top Financial Year Grid Container */
 .wrd-fy-card {
   background: rgba(15, 23, 42, 0.45);

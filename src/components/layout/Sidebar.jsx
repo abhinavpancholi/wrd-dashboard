@@ -117,6 +117,14 @@ export default function Sidebar() {
           Overview
         </NavLink>
       </nav>
+      <div className="wrd-sidebar__bottom">
+        <div className="wrd-sidebar-footer">
+          {/* <div className="tdd-sidebar-footer__title">Tribal Development Dept.</div> */}
+          <div className="wrd-sidebar-footer__text">
+            The data and references shown are dummy and representative in nature, intended solely for demonstration purposes.
+          </div>
+        </div>
+      </div>
     </aside>
   )
 }
